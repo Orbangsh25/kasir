@@ -22,12 +22,12 @@ Route::get('/', function () {
 Route::get('/dasboard', [DasboardController::class,'index']);
 
 
-Route::get('/barang', [BarangController::class,'index']);
-Route::get('/barang/tambah', [BarangController::class,'create']);
-Route::post('/barang/store', [BarangController::class,'store']);
-Route::get('/barang/edit/{id}', [BarangController::class,'edit']);
-Route::put('/barang/update/{id}', [BarangController::class,'update']);
-Route::get('/barang/destroy/{id}', [BarangController::class,'destroy']);
+Route::get('kasir/barang', [BarangController::class,'index']);
+Route::get('kasir/barang/tambah', [BarangController::class,'create']);
+Route::post('kasir/barang/store', [BarangController::class,'store']);
+Route::get('kasir/barang/edit/{id}', [BarangController::class,'edit']);
+Route::put('kasir/barang/update/{id}', [BarangController::class,'update']);
+Route::get('kasir/barang/destroy/{id}', [BarangController::class,'destroy']);
 
 Route::get('/transaksi', [TransaksiController::class,'index']);
 Route::get('/transaksi/tambah', [TransaksiController::class,'create']);
